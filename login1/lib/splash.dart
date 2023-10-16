@@ -16,11 +16,7 @@ class _ScreenSplashState extends State<ScreenSplash> {
     super.initState();
   }
 
-  @override
-  void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-  }
+ 
 
 
 
@@ -36,11 +32,7 @@ Widget build(BuildContext context) {
     );
   } 
 
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-  }
+  
 
 Future<void> gotoLogin() async{
  await Future.delayed(Duration(seconds: 3));

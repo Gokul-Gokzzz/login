@@ -18,80 +18,18 @@ class ScreenHome extends StatelessWidget {
            icon: Icon(Icons.exit_to_app))     
               ],
       ),
-      body: ListView(
-        children: [
-          Container(
-            alignment: Alignment.centerRight,
-            height: 150,
-            child: Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
-                Text(
-                  'DART',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            color: Colors.blue,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 150,
-            child: Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
-                Text(
-                  'FLUTTER',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            color: Colors.lightBlue,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 150,
-            child: Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
-                Text(
-                  'C++',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            color: Colors.blueGrey,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 150,
-            child: Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
-                Text(
-                  'JAVA',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            color: Colors.orange,
-          ),
-          Container(
-            alignment: Alignment.center,
-            height: 150,
-            child: Row(
-              children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.account_circle)),
-                Text(
-                  'JAVASCRIPT',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-            color: Colors.red,
-          )
-        ],
-      ),
+      body: ListView.builder(
+        itemCount:50, 
+        itemBuilder: (BuildContext context , Index){
+          return ListTile(
+            onTap: (){},
+            leading: Icon(Icons.circle),
+            trailing: Icon(Icons.timelapse_rounded),
+            title: Text("phone ${Index + 1}"),
+          );
+        }
+        
+        )
     );
   }
 

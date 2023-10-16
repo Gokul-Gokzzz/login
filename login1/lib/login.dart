@@ -48,13 +48,9 @@ final _formKey = GlobalKey<FormState>();
                   hintText: 'Username',
                 ),
                  validator: (value){
-                  // if(_isDataMatched){
-                  //   return null;
-                  // }else{
-                  //   return 'Error';
-                  // }
 
-                  if(value == null || value.isEmpty){
+
+                  if(  value == null || value.isEmpty){
                     return 'Value is Empty';
                   }else{
                     return null;
@@ -70,11 +66,6 @@ final _formKey = GlobalKey<FormState>();
                   hintText: 'Password',
                 ),
                 validator: (value){
-                  // if(_isDataMatched){
-                  //   return null;
-                  // }else{
-                  //   return 'Error';
-                  // }
                   if(value == null || value.isEmpty){
                     return 'Value is Empty';
                   }else{
